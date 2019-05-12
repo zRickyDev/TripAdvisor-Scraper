@@ -10,11 +10,7 @@ base_url = "https://www.tripadvisor.it/RestaurantSearch?Action=FILTER&geo={}&ita
 email_address = ''
 tel = ''
 file_name = 'results'
-loc_list = ['194851', '1016807', '1186281', '5978712',
-            '1028703', '194830', '4327477', '187903',
-            '644273', '644270', '3844674', '1185507',
-            '664014', '635877', '1076562', '1025218',
-            '1187123']
+loc_list = ['194851']
 added_id_list = []
 
 with open('results.csv', mode='a') as result_file:
@@ -62,25 +58,3 @@ with open('results.csv', mode='a') as result_file:
                 added_id_list.append(item_id)
                 email_address = ''
                 tel = ''
-
-
-# [] Pistoia 194851
-# [] Pescia 1016807
-# [] Massa e Cozzile 1186281
-# [] Collodi 5978712
-# [] Monsummano 1028703
-# [] Montecatini 194830
-# [] Montecatini Alto 4327477
-# [] Vinci 187903
-# [] Carmignano 644273
-# [] Artimino 644270
-
-# [] Casalguidi 3844674
-# [] Serravalle Pistoiese 1185507
-# [] San Baronto 664014
-# [] Lamporecchio 635877
-# [] Comeana
-# [] Montevettolini
-# [] Fucecchio 1076562
-# [] Buggiano 1025218
-# [] Uzzano 1187123
