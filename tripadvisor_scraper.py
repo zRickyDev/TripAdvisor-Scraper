@@ -46,11 +46,11 @@ with open('results.csv', mode='a') as result_file:
                 r1 = requests.get(item_url)
                 data1 = r1.text
                 soup1 = BeautifulSoup(data1, 'html.parser')
-                for a in soup1.select("a[href^=mailto:]"):
+                for a in soup1.select("a[href^='mailto:']"):
                     email_address = a["href"][7:].replace('?subject=?', '')
                     print email_address
                     break
-                for a in soup1.select("a[href^=tel:]"):
+                for a in soup1.select("a[href^='tel:']"):
                     tel = a["href"][4:]
                     print tel
                     break
